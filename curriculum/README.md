@@ -1,4 +1,4 @@
-# Curriculum — Lecture Notes & Teaching Materials
+# Curriculum — Class Notes & Teaching Materials
 
 Per-semester working directories for the Full Stack & Mobile unified track.
 The full curriculum document is distributed by the tutor team (via the class repository); these
@@ -23,7 +23,8 @@ folders hold the materials written for each semester.
 
 ## Conventions
 
-- One subfolder per week (`week-01/`, `week-02/`, …) when materials grow.
-- Lecture notes, pre-reads, lab specs, and rubrics live under the semester folder they belong to.
+- One subfolder per week (`week-01/`, `week-02/`, …). Each week holds `pre-read.md`,
+  `class-notes.md` and `lab.md` as they are written.
+- Pre-reads, class notes, lab specs, and rubrics live under the semester folder they belong to.
 - The checkpoint repository is tagged weekly (`week-05-start`, …) in the class GitHub repo, not here.
 - Physical classes start the week of 2026-10-08; the orientation deck is shared separately.
