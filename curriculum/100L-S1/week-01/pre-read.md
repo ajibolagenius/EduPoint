@@ -38,17 +38,20 @@ answers down; the session uses them.
 
 1. **MDN: How the web works** (15 min)
    <https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works>
+
    *Keep in mind:* the article compares a website to a shop. What does each part of the comparison stand
    for: the house, the road, the shop, the language you order in?
 
 2. **Flavio Copes, HTTP course: "What HTTP does" and "Clients and servers"** (5 min each)
-   <https://flaviocopes.com/courses/http/what-http-does/> ·
-   <https://flaviocopes.com/courses/http/clients-and-servers/>
+   <https://flaviocopes.com/courses/http/what-http-does/>
+   <br><https://flaviocopes.com/courses/http/clients-and-servers/>
+
    *Keep in mind:* can one program be both a client and a server? When?
    (Both lessons show a `curl` command to type into a terminal. Skip it for now; the terminal is week 4.)
 
 3. **The Valley of Code: DNS** (3 min)
    <https://flaviocopes.com/dns/>
+
    *Keep in mind:* why do we type names like `google.com` instead of the numbers computers actually use?
 
 **Optional, if you want more:**

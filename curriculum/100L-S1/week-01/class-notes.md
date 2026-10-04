@@ -10,7 +10,7 @@ programme happens inside the journey you learn today.
 We go through these notes together on the projector. The tutor shows each step on screen while you do it
 yourself. Every section follows the same pattern:
 
-| | |
+| Marker | What it means |
 |---|---|
 | **▶ Try it** | Something to do. Each step is marked with what you need: **(phone)**, **(laptop)**, **(paper)**, or **(watch)**, which means watch the tutor's screen. |
 | **✓ What you should see** | How you can tell it worked |
