@@ -43,6 +43,9 @@ curriculum/
       pre-read.md           student-facing: read before the session
       class-notes.md        projected in class; students practise along; tutor section at the end
       lab.md                student-facing: the lab and deliverable, with tutor notes at the end
+    assignments/
+      assignment-NN.md      student-facing: take-home work spanning several weeks
+      assignment-NN-tutor-notes.md   for tutors: purpose, checks, feedback prompts; never the answer key
 ```
 
 - Create one folder per week, named `week-NN` with two digits.
