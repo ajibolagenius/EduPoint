@@ -41,7 +41,7 @@ curriculum/
   400L-S2/                  split into Full-Stack/ and Mobile/
     week-01/
       pre-read.md           student-facing: read before the session
-      class-notes.md        projected in class; students practise along; tutor section at the end
+      class-notes.md        student-only notes, projected in class; students practise along
       lab.md                student-facing: the lab and deliverable, with tutor notes at the end
     assignments/
       assignment-NN.md      student-facing: take-home work spanning several weeks
@@ -76,6 +76,11 @@ privately; **it is not committed to this repository.**
 - Link to external sources rather than copying them. Paraphrase, and quote only short pieces with
   credit.
 - Credit sources at the end of each file under a **Sources** or **References** heading.
+- From Week 04, include relevant raster images (for example, real interface screenshots) and
+  Mermaid diagrams beside the concepts they explain. Give images meaningful alt text, a caption,
+  source and licence; store them under the week's `assets/` folder for offline use. Each visual
+  should support a question or activity. Keep Mermaid source editable in Markdown and render it
+  in the PDF. Follow the workbook layout conventions in `curriculum/README.md`.
 
 ### Reference sites
 
@@ -96,17 +101,21 @@ privately; **it is not committed to this repository.**
 
 ### Fit how the programme runs
 
-- **Session structure.** Each session is one block of about 3 to 3.5 hours:
+- **Session structure.** Every class is **2 hours (120 minutes)**, as confirmed by the lead tutor
+  on 2026-10-26. This supersedes the longer timings in curriculum §2 and earlier weekly plans:
 
   | Part | Time |
   |---|---|
-  | Warm-up | 10–15 min |
-  | Concept | 45–60 min |
-  | Lab | 90–120 min |
-  | Show & tell | 15 min |
+  | Warm-up | 10 min |
+  | Guided concept and student practice | 25 min |
+  | Lab | 65 min |
+  | Show & tell | 10 min |
   | Ship | 10 min |
 
-  Session plans must fit these timings. Keep the concept part short; the lab takes most of the time.
+  Session plans must total exactly 120 minutes, including transitions, saving and submission.
+  Pre-reading and optional extensions are outside class time. Interleave short demonstrations with
+  student attempts, expected results and checks; the lab takes most of the session. Before Git is
+  taught, Ship means saving files and submitting evidence. Shorten older plans before reusing them.
 - **Teach only what students know so far.** Don't use a tool, language or concept before the week
   that introduces it. For example, in 100L S1 the terminal arrives in week 4, VS Code in week 5, HTML in
   week 6 and Git in week 11. When a reading mentions a tool students haven't met yet, tell them to skip
@@ -137,23 +146,33 @@ privately; **it is not committed to this repository.**
 
 **`class-notes.md`** (for students; projected in class, and used for revision and catch-up)
 
-The tutor projects these notes. Students read a short explanation, then do it on their own device while
-the tutor demonstrates. A student who missed the session must be able to work through the notes alone.
+The tutor projects these student-only notes. **Class notes are a workbook, not a lecture:** the
+student acts first and reads the explanation of what just happened second. A student who missed the
+session must be able to work through the notes alone.
 
-- "How to use these notes", then the learning outcomes, written as things a student "can do"
-- Numbered concept sections. In each one, keep the explanation to about two minutes of reading, then
-  use this pattern:
-  - **▶ Try it**: numbered steps. Mark each with what it needs: **(phone)**, **(laptop)**, **(paper)**,
-    or **(watch)** for the tutor's screen only.
-  - **✓ What you should see**: the expected result, so a student working alone can tell it worked.
+- "How to use these notes" in one short paragraph, then the learning outcomes.
+- **Write each outcome as something the tutor can see happening on a device** — *find, create, move,
+  diagnose, launch* — not *explain* or *describe*. Where understanding is the point, bolt it to an
+  action: "open two sites, compare the address bars, then explain what differs."
+- Numbered concept sections, each in this order:
+  - **▶ Try it** first: numbered steps, marked **(laptop)**, **(phone)**, **(paper)** or **(watch)**.
+    Nothing is explained until the student has done something concrete.
+  - **✓ What you should see**: paste the **real output or screen** the student gets — a terminal
+    block, a panel, a dialog — so they compare it instead of guessing whether they broke something.
+  - **What you just saw**: at most three lines that now name and define the concept the student has
+    met. Theory belongs here, and this is the last place a reader reaches it.
   - **? Check**: one question, with the answer hidden in a
     `<details><summary>Answer</summary>…</details>` block.
-- Key words (a glossary), common questions (also in `<details>` blocks), and Read more
-- **For tutors**, last: the session plan with timings, a prep checklist including offline fallbacks,
-  and tips for running each demo
-
-If a section takes longer to read than to try, it is too long. The concept time is for doing, not
-reading off the screen.
+- **Doing must outweigh reading.** If a section takes longer to read than to try, cut the prose, never
+  the activity. Prefer a short real transcript to a paragraph describing it.
+- **Cap passive time.** At most one **(watch)** step per session. Where the room has too few machines,
+  turn it into a **(phone)** task or a shared-keyboard turn. **(paper)** is a parallel route for a
+  student with no device, not a substitute for a keyboard turn when one is available.
+- Key words (a glossary), common questions (also in `<details>` blocks), and Read more. Keep Read more
+  to links a student should really open; put full attribution in a short Sources list.
+- **Never include a "For tutors" section or tutor-only guidance in class notes or their PDF.**
+  Put the session run sheet, preparation checklist, demo tips and private teaching logistics in
+  the lab's final tutor section. Students may still have a short agenda showing their own activities.
 
 **`lab.md`** (for students first, tutors at the end)
 - The deliverable, quoted from the curriculum document

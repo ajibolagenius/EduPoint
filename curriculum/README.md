@@ -23,8 +23,29 @@ folders hold the materials written for each semester.
 
 ## Conventions
 
+- Every class session is **2 hours (120 minutes)**. The standard split is 10 minutes warm-up,
+  25 guided practice, 65 lab, 10 show & tell and 10 save/submit. Pre-reading is separate.
+  Confirmed 2026-10-26; supersedes the original curriculum's longer session model. Earlier weekly
+  plans retain their original timings and must be shortened before reuse.
 - One subfolder per week (`week-01/`, `week-02/`, …). Each week holds `pre-read.md`,
   `class-notes.md` and `lab.md` as they are written.
 - Pre-reads, class notes, lab specs, and rubrics live under the semester folder they belong to.
 - The checkpoint repository is tagged weekly (`week-05-start`, …) in the class GitHub repo, not here.
 - Physical classes start the week of 2026-10-08; the orientation deck is shared separately.
+
+## Week 04 materials and PDF format
+
+100L S1: [Before class](100L-S1/week-04/pre-read.md) ·
+[Class workbook](100L-S1/week-04/class-notes.md) · [Practical lab](100L-S1/week-04/lab.md).
+Matching PDFs sit beside each Markdown file.
+
+From Week 04, use the workbook layout: a session map, short activity pages, clearly labelled
+operating-system commands (including both Windows PowerShell and Command Prompt), expected results,
+checkpoints and writing space. **Each section is hands-on first: the student acts, sees the real output,
+then reads at most three lines naming what happened.** Show pasted tool output rather than describing
+it, and keep doing time above reading time. Full rules are in [`AGENTS.md`](AGENTS.md). Class notes and
+their PDFs are student-only: put tutor guidance at the
+end of the lab, never in class notes. Answers remain collapsible in Markdown and appear as labelled self-check boxes in print.
+Use `<!-- layout: workbook -->` at the start of a source and `<!-- pagebreak -->` between planned
+pages. The tutor's local renderer is `node tools/md2pdf.mjs curriculum/100L-S1/week-04` from the
+repository root. The workbook theme uses local fonts and needs no internet to render these notes.

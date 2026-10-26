@@ -24,7 +24,7 @@ alongside the academic degree.
 | **Institution** | Trinity University, Yaba, Lagos |
 | **Programme** | Full Stack & Mobile Application Development — unified track |
 | **Structure** | 4 levels (100L–400L) × 2 semesters, 12 weeks each |
-| **Session format** | One session per week, ~3–3.5 hours: warm-up, live-coded concept, lab, show & tell, ship |
+| **Session format** | One session per week, **2 hours (120 minutes)**: warm-up, guided practice, lab, show & tell, ship |
 | **Track fork** | End of 200L S1 — Track A Full Stack (PHP + MySQL) or Track B Mobile (React Native + Expo) |
 | **Status** | Credit-bearing, registered via the Trinity student portal |
 | **First classes** | Week of 2026-10-08 |
@@ -109,6 +109,14 @@ README.md       This document
   repository.
 
 ## For Tutors
+
+**Every class session is two hours.** Confirmed by the lead tutor on 2026-10-26. Plan 10 minutes
+for warm-up, 25 for a short demonstration interleaved with student practice, 65 for the lab,
+10 for show & tell and 10 to save and submit work. Pre-reading and optional extension work are
+outside these 120 minutes. Before Git is taught, Ship means saving files and submitting evidence.
+This duration supersedes the longer session timings in the original curriculum PDF and earlier
+weekly materials; those older plans must be shortened before reuse. Themes and assessment weights
+are unchanged.
 
 Content is authored per semester under `curriculum/<LEVEL>-S<n>/<TRACK>/`, one subfolder per week
 once materials grow. Class notes, pre-reads, lab specs and rubrics belong to the semester folder
