@@ -35,12 +35,18 @@ folders hold the materials written for each semester.
 - The checkpoint repository is tagged weekly (`week-05-start`, …) in the class GitHub repo, not here.
 - Physical classes start the week of 2026-10-08; the orientation deck is shared separately.
 
-## Week 04 materials and presentation formats
+## Week 04 onward: materials and presentation formats
 
-100L S1: [Before class](100L-S1/week-04/pre-read.md) ·
+100L S1 Week 04: [Before class](100L-S1/week-04/pre-read.md) ·
 [Class workbook](100L-S1/week-04/class-notes.md) ·
 [Interactive class presentation](100L-S1/week-04/class-notes.html) ·
 [Practical lab](100L-S1/week-04/lab.md).
+
+100L S1 Week 05: [Before class](100L-S1/week-05/pre-read.md) ·
+[Class workbook](100L-S1/week-05/class-notes.md) ·
+[Interactive class presentation](100L-S1/week-05/class-notes.html) ·
+[Practical lab](100L-S1/week-05/lab.md) ·
+[Practice kit](100L-S1/week-05/practice-kit/).
 Matching PDFs sit beside each Markdown file.
 
 ### HTML class presentations
