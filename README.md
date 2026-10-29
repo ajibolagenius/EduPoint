@@ -104,6 +104,8 @@ README.md       This document
 ```
 
 - Semester folder structure and conventions: `curriculum/README.md`.
+- [Week 04 interactive class notes](curriculum/100L-S1/week-04/class-notes.html): download and open
+  in a browser for offline activities, shell-specific commands and an editable, persistent timer.
 - Full curriculum document, orientation deck and document tooling are maintained locally by the
   tutor team and distributed to students through the class repository — they are not part of this
   repository.
@@ -121,3 +123,12 @@ are unchanged.
 Content is authored per semester under `curriculum/<LEVEL>-S<n>/<TRACK>/`, one subfolder per week
 once materials grow. Class notes, pre-reads, lab specs and rubrics belong to the semester folder
 they are taught in; the weekly checkpoint tags are made in the class repository, not here.
+
+Always create an interactive `class-notes.html` alongside newly written or revised `class-notes.md`.
+The first conversion is 100L S1 Week 04. Earlier weeks are converted when next revised.
+Use Trinity University's colours kept restrained, system fonts, purposeful motion, reduced-motion
+support and offline assets. See [curriculum authoring rules](curriculum/AGENTS.md) for content and
+browser-verification requirements.
+To present a week's HTML notes and drive the slides from a phone on the same Wi-Fi, run
+`node tools/deck-server.mjs curriculum/100L-S1/week-04` and open the printed URLs — laptop gets the
+deck, phone gets Next/Previous, a slide list and a laser pointer.

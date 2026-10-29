@@ -42,6 +42,7 @@ curriculum/
     week-01/
       pre-read.md           student-facing: read before the session
       class-notes.md        student-only notes, projected in class; students practise along
+      class-notes.html      required interactive presentation of the same student-only notes
       lab.md                student-facing: the lab and deliverable, with tutor notes at the end
     assignments/
       assignment-NN.md      student-facing: take-home work spanning several weeks
@@ -49,8 +50,8 @@ curriculum/
 ```
 
 - Create one folder per week, named `week-NN` with two digits.
-- Each week has exactly the three files above. Add another file only if the week really needs one,
-  such as a printable handout.
+- Each week has the three Markdown sources above and a required `class-notes.html` presentation.
+  Add other files only if the week really needs them, such as matching PDFs or a printable handout.
 - Empty folders contain a `.gitkeep` file. Delete it when the folder gets real content.
 
 ## The source of truth
@@ -182,6 +183,36 @@ session must be able to work through the notes alone.
 - Submission instructions
 - A rubric that totals 10 points
 - Tutor notes: the kit to prepare, how to run the activities, and answer keys
+
+**`class-notes.html`** (required whenever class notes are authored or revised)
+
+- Always write and maintain an HTML presentation alongside `class-notes.md`. This starts with
+  100L S1 Week 04; earlier weeks need conversion when their notes are next revised. Markdown remains
+  the editable workbook source. Keep the HTML's concepts, commands, outcomes and session timings in
+  step with it; HTML is a designed teaching experience, not an unstyled Markdown dump.
+- Keep it student-only and hands-on first. Include meaningful interactions with feedback, such as
+  navigable diagrams, prediction/reveal steps, safe simulations or ungraded knowledge checks.
+  Do not publish worked solutions to graded tasks. Label simulations and sample outputs clearly;
+  browser activity must never be presented as evidence of a real device command or installation.
+- Use the lab theme from the Week 04 presentation: monochrome paper and ink, the system monospace
+  stack throughout, big rounded flat controls, and four accents that each keep one job (violet acts,
+  coral draws attention, sun marks output and highlights, lime marks live state). Reuse its `:root`
+  tokens and "Lab theme" rules rather than inventing colours. No full-bleed dark slides. Clear
+  hierarchy, generous space and readable contrast. Use purposeful motion to explain relationships
+  and state changes.
+  Honour `prefers-reduced-motion` and provide a visible motion toggle.
+- Make the core presentation work offline when opened directly as a file: inline CSS and JavaScript,
+  embedded images only where truly needed, no runtime CDN or network dependency. Use system font
+  stacks; do not embed font files — embedded base64 fonts multiply the file size for little gain.
+  Preserve visual attribution. Provide keyboard and on-screen navigation, a section index, visible
+  focus, and accessible controls.
+- Include the phone-remote hook from the Week 04 presentation (its final script block and the
+  "Phone remote" style rules) so `tools/deck-server.mjs` can drive the deck from a phone on the same
+  Wi-Fi. Mark any control outside the slides that the phone should reach with `data-remote`.
+  The hook must stay silent when the file is opened as `file://`.
+- Verify every slide and core interaction in a real browser before delivery, including a projector
+  viewport and a phone viewport. Check for clipping/overlap, keyboard use, reduced motion, shell
+  variants, offline operation and JavaScript errors. Link the HTML from `curriculum/README.md`.
 
 ### This repository is public: answer keys
 
