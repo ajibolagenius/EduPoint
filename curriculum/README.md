@@ -42,6 +42,10 @@ folders hold the materials written for each semester.
 [Interactive class presentation](100L-S1/week-04/class-notes.html) ·
 [Practical lab](100L-S1/week-04/lab.md).
 
+Week 04 take-home: [Assignment 02 — The Campus Fair Workspace](100L-S1/assignments/assignment-02.md) ·
+[Printable brief](100L-S1/assignments/assignment-02.pdf) ·
+[Tutor notes](100L-S1/assignments/assignment-02-tutor-notes.md).
+
 100L S1 Week 05: [Before class](100L-S1/week-05/pre-read.md) ·
 [Class workbook](100L-S1/week-05/class-notes.md) ·
 [Interactive class presentation](100L-S1/week-05/class-notes.html) ·
