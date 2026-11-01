@@ -39,10 +39,11 @@ curriculum/
   200L-S2/ … 300L-S2/       split into Full-Stack/ and Mobile/
   400L-S1/                  shared teaching, track-adapted labs
   400L-S2/                  split into Full-Stack/ and Mobile/
+    story.md                the semester's story bible: characters, arc, writing rules (from 100L S1 W05)
     week-01/
       pre-read.md           student-facing: read before the session
-      class-notes.md        student-only notes, projected in class; students practise along
-      class-notes.html      required interactive presentation of the same student-only notes
+      class-notes.md        student-only workbook: the full written episode, for catch-up and revision
+      class-notes.html      required presentation the tutor teaches from, built from the same episode
       lab.md                student-facing: the lab and deliverable, with tutor notes at the end
     assignments/
       assignment-NN.md      student-facing: take-home work spanning several weeks
@@ -141,31 +142,55 @@ privately; **it is not committed to this repository.**
 
 **`pre-read.md`** (for students, about 30–45 minutes of work)
 - What the session is about, in two or three sentences
+- From 100L S1 Week 05: open with the story set-up, a short message that tells students the client's
+  problem without giving away the class's cold open
 - Short readings, in order, each with one question to keep in mind
 - Anything to do before reading, and what to bring
 - A note on what to do if the student has no internet
 
-**`class-notes.md`** (for students; projected in class, and used for revision and catch-up)
+**`class-notes.md`** (for students: the full written episode, read for catch-up and revision)
 
-The tutor projects these student-only notes. **Class notes are a workbook, not a lecture:** the
-student acts first and reads the explanation of what just happened second. A student who missed the
-session must be able to work through the notes alone.
+From 100L S1 Week 05, each week's class notes are one **episode** of a semester-long story. Read the
+semester's story bible (for example [`100L-S1/story.md`](100L-S1/story.md)) first, and keep its names,
+facts and tone. Change the bible before changing the story. The tutor teaches live from the HTML
+presentation; the Markdown is the complete chapter. A student who missed the session must be able to
+work through it alone. Weeks 01–04 keep their older do-first layout until they are next revised.
 
-- "How to use these notes" in one short paragraph, then the learning outcomes.
+- Title the week as an episode, such as "Week 05 — Mama Titi's Broken Total". Then "So far, and
+  today" in one short paragraph, "How to use these notes" with a table of the beat parts, and the
+  learning outcomes.
 - **Write each outcome as something the tutor can see happening on a device** — *find, create, move,
   diagnose, launch* — not *explain* or *describe*. Where understanding is the point, bolt it to an
   action: "open two sites, compare the address bars, then explain what differs."
-- Numbered concept sections, each in this order:
-  - **▶ Try it** first: numbered steps, marked **(laptop)**, **(phone)**, **(paper)** or **(watch)**.
-    Nothing is explained until the student has done something concrete.
-  - **✓ What you should see**: paste the **real output or screen** the student gets — a terminal
-    block, a panel, a dialog — so they compare it instead of guessing whether they broke something.
-  - **What you just saw**: at most three lines that now name and define the concept the student has
-    met. Theory belongs here, and this is the last place a reader reaches it.
-  - **? Check**: one question, with the answer hidden in a
-    `<details><summary>Answer</summary>…</details>` block.
-- **Doing must outweigh reading.** If a section takes longer to read than to try, cut the prose, never
-  the activity. Prefer a short real transcript to a paragraph describing it.
+- The episode, in this order:
+  - **Cold open**, the 10-minute warm-up: the client's message, then a prediction on paper that the
+    room votes on.
+  - **Beats**, inside the 25-minute guided practice. Three is the norm, at about 8 minutes each. Each
+    beat runs **Problem → Idea → Try**:
+    - **The problem**: two to four sentences of story that create the need for the concept.
+    - **The idea**: the concept, with a mental model (an analogy) and a diagram. Theory lives here.
+      Explain an idea before naming it.
+    - **Myth**: one belief beginners commonly hold, stated, then corrected.
+    - **▶ Try it**: numbered steps, marked **(laptop)**, **(phone)**, **(paper)** or **(watch)**. Every
+      beat ends in hands-on work; no beat is reading only.
+    - **✓ What you should see**: paste the **real output or screen** the student gets, so they compare
+      it instead of guessing whether they broke something.
+    - **On the job**: one or two sentences on where working developers use this.
+    - **? Check**: one question, with the answer hidden in a
+      `<details><summary>Answer</summary>…</details>` block.
+  - **The job**: the lab briefing, framed as the client's request, with its own problem, idea, myth
+    and check, and a table of the lab parts. Curriculum topics practised only in the lab are taught here.
+  - **Next episode**: the cliffhanger that leads into next week's theme, as planned in the story bible.
+- Then: the episode in one table (problem → tool → idea), key words, common questions, Read more,
+  Sources and an exit reflection.
+- **Appendix · Step by step** comes last: exact clicks, shell and operating-system variants, shortcut
+  tables and no-extension routes. Beats point to it, such as *(Appendix A)*, instead of carrying
+  procedure in the story.
+- **Length:** about a 30-minute read before the appendix, roughly 4,000–4,500 words including tables
+  and code. The appendix is extra.
+- **Doing outweighs listening in class.** The tutor reads the problem in under a minute and teaches
+  the idea in two or three; learners spend the rest of each beat trying. The Markdown may explain more
+  than the room hears.
 - **Cap passive time.** At most one **(watch)** step per session. Where the room has too few machines,
   turn it into a **(phone)** task or a shared-keyboard turn. **(paper)** is a parallel route for a
   student with no device, not a substitute for a keyboard turn when one is available.
@@ -177,12 +202,15 @@ session must be able to work through the notes alone.
 
 **`lab.md`** (for students first, tutors at the end)
 - The deliverable, quoted from the curriculum document
+- From 100L S1 Week 05: the client's request from "The job" as the brief. The story frames the lab;
+  it never changes the deliverable or the rubric
 - Parts with times and formats
 - Clear requirements
 - Optional extras
 - Submission instructions
 - A rubric that totals 10 points
-- Tutor notes: the kit to prepare, how to run the activities, and answer keys
+- Tutor notes: the kit to prepare, a run sheet by cold open and beat, how to deliver a beat live,
+  and answer keys
 
 **`class-notes.html`** (required whenever class notes are authored or revised)
 
@@ -190,10 +218,16 @@ session must be able to work through the notes alone.
   100L S1 Week 04; earlier weeks need conversion when their notes are next revised. Markdown remains
   the editable workbook source. Keep the HTML's concepts, commands, outcomes and session timings in
   step with it; HTML is a designed teaching experience, not an unstyled Markdown dump.
-- Keep it student-only and hands-on first. Include meaningful interactions with feedback, such as
-  navigable diagrams, prediction/reveal steps, safe simulations or ungraded knowledge checks.
-  Do not publish worked solutions to graded tasks. Label simulations and sample outputs clearly;
-  browser activity must never be presented as evidence of a real device command or installation.
+- From 100L S1 Week 05, build it for the tutor teaching live. Each beat is a short run of slides:
+  **Problem** (story-beat slide: the client's message or an artefact, such as the order slip),
+  **Idea** (one diagram or model), **Myth or Predict** (a room prompt: big options the tutor marks for
+  the room's choice, then a reveal), and **Try** (steps, what you should see, the check). Never more
+  than one idea slide before the room has to act. Prefer story moments and diagrams to text walls.
+  Keep a simulation only where it is the reveal for a prediction.
+- Keep it student-only: no presenter notes, because the repository is public. Do not publish worked
+  solutions to graded tasks. Label simulations and sample outputs clearly; browser activity must never
+  be presented as evidence of a real device command or installation.
+- Embed the full Markdown workbook as the deck's reading copy, with its diagrams rendered to inline SVG.
 - Use the lab theme from the Week 04 presentation: monochrome paper and ink, the system monospace
   stack throughout, big rounded flat controls, and four accents that each keep one job (violet acts,
   coral draws attention, sun marks output and highlights, lime marks live state). Reuse its `:root`

@@ -1,5 +1,5 @@
 <!-- layout: workbook -->
-# Week 05 — Editor Lab
+# Week 05 — The Job: Show Her the Page
 
 **100L · Semester 1 · Code Editor / IDE · Lab: 65 minutes within a 2-hour class**
 
@@ -7,9 +7,15 @@
 
 > **Curriculum deliverable:** “Configure VS Code; first "Hello World" page opened live in the browser”.
 
-Set VS Code up to help you, add one feature from a file, and build a page you can watch change in your
-browser. Use the [class workbook](class-notes.md), especially section 6. This is 100L: no AI may write,
-complete or fix your work, and VS Code's AI features stay switched off.
+> **Mama Titi** · 11:15 am
+>
+> Funmi says the total is correct now. Thank you o! But I don't understand code. Show me something I
+> can see in a browser.
+
+Set VS Code up the way a working developer would, add one feature from a file, and build a page you can
+watch change in your browser. Use the [class workbook](class-notes.md): "The job" explains the ideas and
+Appendix A–G has every click. This is 100L: no AI may write, complete or fix your work, and VS Code's
+AI features stay switched off.
 
 **Keep individual evidence.** Swap driver and navigator halfway through each part. Both learners configure
 their own VS Code profile or take a turn on the shared station, and both explain results.
@@ -50,21 +56,21 @@ and `"chat.disableAIFeatures": true,`. A theme you chose earlier may appear too.
 
 ## Part 2 · Install an extension offline
 
-1. Use workbook section 6 to install **Live Preview** from `live-preview.vsix` in your
+1. Use workbook Appendix E to install **Live Preview** from `live-preview.vsix` in your
    `edupoint-installers` folder. Use the Extensions view or the terminal route, not the online
    Marketplace search.
 2. Open the Extensions view's **Installed** list. Screenshot **Live Preview** with its publisher, Microsoft.
 3. In your log, write one sentence: what does this extension add that VS Code lacked?
 
 **If blocked** for three minutes, record the exact message and ask for the prepared station. You can still
-finish Part 3 using the **No extension?** route in section 6.
+finish Part 3 using the **No extension?** route in Appendix G.
 
 ## Part 3 · Hello World, live
 
 1. Use the integrated terminal to make a fresh folder named `edupoint-week05-lab` in your home folder.
    Then **File → Open Folder…** to open it. If the name already exists, agree a fresh name with the tutor.
 2. Create `index.html` in the Explorer. Use **!** from the suggestion list to start the page, as in
-   section 6.
+   Appendix F.
 3. Give it a title of your choice. Inside `<body>`, add a heading that says `Hello, World!` and one
    sentence of your own on the next line, written as `<p>…</p>`. No personal details are needed.
 4. Open the page **in your browser**: Live Preview's address, or the `file:///` route if you have no
@@ -78,14 +84,14 @@ finish Part 3 using the **No extension?** route in section 6.
 
 Work in `edupoint-week05-kit`. If you replaced `Zobbo` in class, that is fine: this drill uses other words.
 
-1. **Search.** Every 50cl drink costs **N300** this week; next week it rises to **N350**. Search the kit
-   for `N300`. Record the count and the files **before** replacing. Replace them all, then search again
+1. **Search.** Mama Titi is raising the price of zobo from **N300** to **N350** next week. Search the
+   kit for `N300`. Record the count and the files **before** replacing. Replace them all, then search again
    and record what VS Code reports.
 2. **Format.** In your own `index.html`, add extra spaces at the start of three lines so the page looks
    messy. Screenshot it. Press **Ctrl+S · ⌘S** and screenshot again. Write which setting did the work.
 3. **Debug.** In `count.js`, set a breakpoint on the line inside the `for` loop. Start debugging and add
    `total` to **Watch**. Fill in the table for **your file as it is now**: with the class fix, or without
-   it if you skipped section 5. Stop debugging, run `node count.js` and record the output.
+   it if you skipped Beat 3. Stop debugging, run `node count.js` and record the output.
 
 | Pause | `price` | `total` | My note |
 |---|---|---|---|
@@ -156,25 +162,28 @@ criteria stay pending until the learner demonstrates them on a suitable station.
 
 | Elapsed time | Minutes | What to run |
 |---|---|---|
-| 00:00–00:10 | 10 | Section 1: same file in a plain editor and VS Code; pairs name three differences |
-| 00:10–00:16 | 6 | Section 2a: open the kit folder, Continue without Signing In, disable AI features |
-| 00:16–00:20 | 4 | Section 2b: integrated terminal, listing, `node count.js` |
-| 00:20–00:25 | 5 | Section 3: Format Document, auto-closing tag, suggestion list |
-| 00:25–00:30 | 5 | Section 4: search `Zobbo`, read the count, replace |
-| 00:30–00:35 | 5 | Section 5: the unsaved dot, then a breakpoint and Watch |
+| 00:00–00:10 | 10 | Cold open: read Mama Titi's message aloud; pairs add up the order and predict why Word broke the file; room vote |
+| 00:10–00:18 | 8 | Beat 1: three kinds of tool; plain editor vs VS Code; open the kit folder, disable AI features, Format Document, auto-closing tag |
+| 00:18–00:26 | 8 | Beat 2: room predicts the `rice` count, then searches; search `Zobbo`, read the preview, replace |
+| 00:26–00:35 | 9 | Beat 3: integrated terminal, `node count.js`, breakpoint and Watch; the unsaved fix, then save |
 | 00:35–01:40 | 65 | Lab Parts 1–5: 15 + 10 + 20 + 15 + 5 minutes |
 | 01:40–01:50 | 10 | Two short demos; ask a non-driver to explain one feature |
 | 01:50–02:00 | 10 | Each learner checks evidence, saves and submits; collect offline work |
 
+Each beat runs Problem → Idea → Try. Read the story problem aloud in under a minute, teach the idea
+with its diagram in two to three minutes, then stop talking: learners spend the rest of the beat
+trying. Name the myth out loud before the try; it is what learners will otherwise believe.
 Demonstrate one action, then stop while learners try it. Zoom VS Code (**Ctrl+= · ⌘=**) so the back row
 can read the projected editor. Ask “What do you expect to see?” before each reveal.
 
 ### Prepare before students arrive
 
+- Read the 100L S1 story bible, `curriculum/100L-S1/story.md`, so the characters and the cliffhanger
+  stay consistent with later weeks.
 - Print the pre-read, workbook and lab; save PDFs and image assets locally. No web access is needed during
   the core lesson.
 - Copy the repository's `practice-kit` folder to every machine as `edupoint-week05-kit` in the home folder.
-  Keep a clean copy on USB: section 4 changes the menu files, so re-copy for a learner who needs a reset.
+  Keep a clean copy on USB: Beat 2 changes the menu files, so re-copy for a learner who needs a reset.
 - Add `live-preview.vsix` to each `edupoint-installers` folder. Download it once on a connected machine:
   in VS Code's Extensions view, search **Live Preview** by Microsoft, right-click it and choose
   **Download VSIX**. Record the version in the kit manifest; these notes were tested with 0.4.20.
@@ -196,9 +205,13 @@ prompts mean the setting is off. Disable or avoid AI assistance during assessed 
 
 These cover the workbook's guided checks only.
 
-- Section 4 finds **5 results in 3 files**: `monday.txt` 2, `tuesday.txt` 1, `wednesday.txt` 2.
-- Section 5's paused values are 1500/0, 700/1500 and 300/700. `total = total + price;` prints
-  `Order total: N2500`.
+- Cold open: the order should total **₦2,500**. Word saves its own format and curly quotes, not plain
+  text.
+- Beat 2: `rice` finds **8 results in 3 files** (`count.js` 5 from "price" and "prices",
+  `monday.txt` 2, `messy.html` 1). With **Match Whole Word** it finds **3 results in 2 files**.
+  `Zobbo` finds **5 results in 3 files**: `monday.txt` 2, `tuesday.txt` 1, `wednesday.txt` 2.
+- Beat 3: the paused values are 1500/0, 700/1500 and 300/700. With `total = total + price;` unsaved,
+  `node count.js` still prints `Order total: N300`; after saving it prints `Order total: N2500`.
 
 There is no public worked solution for the graded lab. Keep any marking key in the tutors' private
 materials. Do not replace an individual's demonstration with their partner's result.
@@ -208,6 +221,7 @@ materials. Do not replace an individual's demonstration with their partner's res
 - “Which setting made that file tidy itself, and when does it run?”
 - “How many matches did you expect before you pressed Replace All?”
 - “What did the breakpoint show you that the printed total did not?”
+- “Your fix is on screen but the output hasn't changed. What are your two suspects?”
 - “What address is your browser showing, and what does `127.0.0.1` mean?”
 
 ### Completion and follow-up
@@ -222,7 +236,7 @@ materials intentionally do not invent one.
 ## Sources
 
 - Local curriculum §4, week 5 (quoted deliverable) and §11 (assessment weights).
-- [Class workbook](class-notes.md), especially sections 2–6 and its linked VS Code references.
+- [Class workbook](class-notes.md), especially Beats 1–3, "The job" and Appendix A–G.
 - Microsoft: [Settings](https://code.visualstudio.com/docs/configure/settings),
   [Basic editing](https://code.visualstudio.com/docs/editing/codebasics) for `files.autoSave` and
   `editor.formatOnSave`, and [Extension Marketplace](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace)

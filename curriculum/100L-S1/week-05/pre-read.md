@@ -1,14 +1,24 @@
 <!-- layout: workbook -->
-# Week 05 — Before You Come
+# Week 05 — Before You Come: A New Client
 
 **100L · Semester 1 · Code Editor / IDE · Preparation: 35 minutes**
 
-## Same words, better tools
+## The story so far
 
-Last week you typed commands into a terminal. This week you move into a **code editor**: a program
-built for writing code, with colours, suggestions, search across files, a terminal inside it and tools
-for finding mistakes. You will set it up and open your first page in the browser. Class lasts
-**2 hours**; this preparation happens before class and is not graded.
+From this week, each class is an **episode**. You play a junior developer at **Tiny Lamp Studio**, a
+small web studio near campus, and each week a client brings a problem that needs that week's skill.
+The studio and its client are made up. The skills and the files are real.
+
+> **Tolu, senior developer** · Friday, 6:10 pm
+>
+> Good news. Mama Titi, who had the canteen stall at the Campus Fair, wants our help. Her order slips
+> add up wrong and her menus are a mess. Her files arrive on Monday. We fix them in a proper **code
+> editor**, not Notepad, so get yours ready this weekend.
+
+A code editor is a program built for writing code: colours, suggestions, search across many files, a
+terminal inside it and tools for finding mistakes. In class you set one up, fix Mama Titi's files and
+open your first page in a browser. Class lasts **2 hours**. This preparation happens before class and is
+not graded.
 
 > **Bring:** your laptop and charger if available, a notebook, a pen and these downloaded notes.
 > No laptop? Tell the tutor so you can take a turn on a shared machine. VS Code is free; no account,
@@ -28,8 +38,8 @@ for finding mistakes. You will set it up and open your first page in the browser
 
 3. Save it as `menu.txt` inside the `edupoint-week04-practice` folder you made last week, or in your
    home folder if that folder is gone. Close the editor and reopen the file. Did anything change?
-4. **(paper)** Answer: what would help you if this file had 500 lines and one mistake hidden in it?
-   Write two wishes, such as “show line numbers”.
+4. **(paper)** Mama Titi's real menus are longer. Answer: what would help you if this file had 500
+   lines and one wrong price hidden in it? Write two wishes, such as “show line numbers”.
 
 **Record:** editor used __________ · saved in folder __________ · wish 1 __________ · wish 2 __________
 
@@ -44,7 +54,8 @@ Read in this order and stop at the boundaries below. You do not need to install 
    “Enhancing your code editor with extensions”, read the first two paragraphs only. **Skip** installing
    Prettier and changing its settings: in class you will use VS Code's built-in formatter. The examples
    are JavaScript, which you learn next semester; look at their shape, not their meaning.
-   **Question:** Which three features does a code editor give you that Notepad does not?
+   **Question:** Which three features does a code editor give you that Notepad does not? Which of
+   them would you use first on Mama Titi's files?
 2. **VS Code docs — [User interface](https://code.visualstudio.com/docs/editing/getting-started/userinterface)**
    (5 min). Read only the first part, up to and including the labelled picture of the window.
    **Skip** everything about Chat, agents, Copilot and source control (Git arrives in week 11).
@@ -87,6 +98,7 @@ station; you will not fall behind.
 ## Ready check
 
 - I have saved and reopened a plain text file, and written two wishes for a better editor.
+- I can say, in one sentence, what Mama Titi needs from Tiny Lamp this week.
 - I know which link to choose on VS Code's first screen, and why.
 - I have recorded whether VS Code opens on my device. I have not used AI to answer the tasks.
 

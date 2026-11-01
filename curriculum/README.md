@@ -46,7 +46,10 @@ Week 04 take-home: [Assignment 02 — The Campus Fair Workspace](100L-S1/assignm
 [Printable brief](100L-S1/assignments/assignment-02.pdf) ·
 [Tutor notes](100L-S1/assignments/assignment-02-tutor-notes.md).
 
-100L S1 Week 05: [Before class](100L-S1/week-05/pre-read.md) ·
+From Week 05, 100L S1 is told as one story, a season of weekly episodes. Its characters, arc and
+writing rules are in the [story bible](100L-S1/story.md).
+
+100L S1 Week 05, episode 1, *Mama Titi's Broken Total*: [Before class](100L-S1/week-05/pre-read.md) ·
 [Class workbook](100L-S1/week-05/class-notes.md) ·
 [Interactive class presentation](100L-S1/week-05/class-notes.html) ·
 [Practical lab](100L-S1/week-05/lab.md) ·
@@ -74,7 +77,9 @@ only works while the server runs, and the file still opens offline as before.
 
 Every future HTML version must be clean, interactive and motion-backed, using the Week 04 lab
 theme — monochrome with four purposeful accents, system monospace type rather than embedded font
-files, big rounded controls and no full-bleed dark slides. Interactions must teach: predict, try, inspect and explain. Browser
+files, big rounded controls and no full-bleed dark slides. Interactions must teach: predict, try, inspect and explain.
+From Week 05, decks are built for live teaching: each beat runs problem, idea, a room vote with a
+reveal, then try, with story moments and diagrams instead of text walls. Browser
 simulations are practice, not proof of device work. Keep the two-hour session, student-only content,
 source credits and the Markdown workbook's scope. Include keyboard navigation, a topic index,
 reduced-motion support, the phone-remote hook and offline assets. Check every slide and core
@@ -83,9 +88,11 @@ requirements are in [AGENTS.md](AGENTS.md).
 
 From Week 04, use the workbook layout: a session map, short activity pages, clearly labelled
 operating-system commands (including both Windows PowerShell and Command Prompt), expected results,
-checkpoints and writing space. **Each section is hands-on first: the student acts, sees the real output,
-then reads at most three lines naming what happened.** Show pasted tool output rather than describing
-it, and keep doing time above reading time. Full rules are in [`AGENTS.md`](AGENTS.md). Class notes and
+checkpoints and writing space. Show pasted tool output rather than describing it. Weeks 04 and
+earlier are hands-on first: the student acts, sees the real output, then reads at most three lines.
+**From Week 05, class notes are episodes:** a cold open, three beats that each run problem → idea →
+myth → try → what you should see → on the job → check, the lab as "the job", a cliffhanger, and an
+appendix holding the step-by-step procedure. Full rules are in [`AGENTS.md`](AGENTS.md). Class notes and
 their PDFs are student-only: put tutor guidance at the
 end of the lab, never in class notes. Answers remain collapsible in Markdown and appear as labelled self-check boxes in print.
 Use `<!-- layout: workbook -->` at the start of a source and `<!-- pagebreak -->` between planned
