@@ -54,6 +54,12 @@ writing rules are in the [story bible](100L-S1/story.md).
 [Interactive class presentation](100L-S1/week-05/class-notes.html) ·
 [Practical lab](100L-S1/week-05/lab.md) ·
 [Practice kit](100L-S1/week-05/practice-kit/).
+
+100L S1 Week 06, episode 2, *Mama Titi's One-Line Menu*: [Before class](100L-S1/week-06/pre-read.md) ·
+[Class workbook](100L-S1/week-06/class-notes.md) ·
+[Interactive class presentation](100L-S1/week-06/class-notes.html) ·
+[Practical lab](100L-S1/week-06/lab.md) ·
+[Practice kit](100L-S1/week-06/practice-kit/).
 Matching PDFs sit beside each Markdown file.
 
 ### HTML class presentations
