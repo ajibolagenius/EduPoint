@@ -44,7 +44,7 @@ curriculum document stays the authority for every topic, deliverable and weight.
 | 11 | Git & GitHub | Version control for the studio's work. | Publish the portfolio to GitHub; first PR opened and merged | Tolu is away next week. |
 | 12 | Consolidation & practical | You work alone against a small brief. The story frames the session only and **never** hints at the practical's content. | CA1 — timed build; portfolio live and on GitHub | End of season one. |
 
-Weeks 06–12 are a plan, not written material. Check each row against the curriculum document before
+Weeks 05–06 are written. Weeks 07–12 are a plan, not written material. Check each row against the curriculum document before
 writing the week, and update this table if the tutor team changes it.
 
 ## Writing rules for the story
