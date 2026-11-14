@@ -52,8 +52,10 @@ curriculum/
 - Create one folder per week, named `week-NN` with two digits.
 - From 100L S1 Week 07, a week has **four materials and nothing else**: `pre-read.md`,
   `class-notes.md`, `class-notes.html` and one `assignments/assignment-NN.md`. Don't write a
-  `lab.md`, a practice kit, tutor notes or story episodes for new weeks. Render an assignment to PDF
-  only when it is attached to Google Classroom.
+  `lab.md`, a practice kit, tutor notes or story episodes for new weeks.
+- **Always render PDFs** of `pre-read.md`, `class-notes.md` and the assignment, and keep them beside
+  their Markdown: `node tools/md2pdf.mjs <file.md>` from the repository root. Re-render after every
+  Markdown edit. Students download them for offline reading; the assignment PDF goes on Google Classroom.
 - Weeks 01–06 keep files from earlier formats (labs, practice kits, PDFs, tutor notes). Leave them
   as they are, and don't copy their layouts forward.
 - Empty folders contain a `.gitkeep` file. Delete it when the folder gets real content.

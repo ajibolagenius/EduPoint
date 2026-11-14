@@ -29,7 +29,8 @@ folders hold the materials written for each semester.
   plans retain their original timings and must be shortened before reuse.
 - One subfolder per week (`week-01/`, `week-02/`, …). **From 100L S1 Week 07**, a week has four
   materials and nothing else: `pre-read.md`, `class-notes.md`, an interactive `class-notes.html`
-  presentation, and one graded take-home in `assignments/`. No lab, practice kit or tutor notes.
+  presentation, and one graded take-home in `assignments/`, each Markdown file with a matching PDF.
+  No lab, practice kit or tutor notes.
   Keep Markdown and HTML aligned. Weeks 01–06 keep files from their earlier formats.
 - Pre-reads, class notes, presentations and assignments live under the semester folder they belong to.
 - Assignments are posted and collected on Google Classroom.
@@ -75,8 +76,9 @@ Deep-Dive References**. The pre-read uses the same structure, shortened to the f
 assignment carries its curriculum deliverable. The story episodes of Weeks 05–06 are retired; Mama
 Titi's Kitchen stays as the running example in code samples. Full rules are in [AGENTS.md](AGENTS.md).
 
-100L S1 Week 07, *HTML II — Forms, Semantics & Accessibility*: [Pre-read](100L-S1/week-07/pre-read.md) ·
-[Class notes](100L-S1/week-07/class-notes.md) ·
+100L S1 Week 07, *HTML II — Forms, Semantics & Accessibility*: [Pre-read](100L-S1/week-07/pre-read.md)
+([PDF](100L-S1/week-07/pre-read.pdf)) ·
+[Class notes](100L-S1/week-07/class-notes.md) ([PDF](100L-S1/week-07/class-notes.pdf)) ·
 [Interactive class presentation](100L-S1/week-07/class-notes.html) ·
 [Assignment 04 — The Portfolio Contact Desk](100L-S1/assignments/assignment-04.md) ·
 [Printable brief](100L-S1/assignments/assignment-04.pdf).
