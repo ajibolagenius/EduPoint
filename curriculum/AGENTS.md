@@ -55,7 +55,8 @@ curriculum/
   `lab.md`, a practice kit, tutor notes or story episodes for new weeks.
 - **Always render PDFs** of `pre-read.md`, `class-notes.md` and the assignment, and keep them beside
   their Markdown: `node tools/md2pdf.mjs <file.md>` from the repository root. Re-render after every
-  Markdown edit. Students download them for offline reading; the assignment PDF goes on Google Classroom.
+  Markdown edit. All three use the assignment PDF theme (green title band, tinted metadata strip),
+  so each must start with its `#` title followed by a bold metadata line. Students download them for offline reading; the assignment PDF goes on Google Classroom.
 - Weeks 01–06 keep files from earlier formats (labs, practice kits, PDFs, tutor notes). Leave them
   as they are, and don't copy their layouts forward.
 - Empty folders contain a `.gitkeep` file. Delete it when the folder gets real content.
@@ -159,8 +160,9 @@ fully; the deck teaches it live; the assignment is where students prove it.
 
 **`class-notes.md`** — this outline, in this order:
 
-1. `# Week NN: <Curriculum theme>`, then two or three short paragraphs: what students can already
-   do, what is still missing, and what this week adds. A `---` rule follows.
+1. `# Week NN: <Curriculum theme>`, then a bold line with the level, semester, week and "Class
+   notes" (the PDF shows it as a strip under the title), then two or three short paragraphs: what
+   students can already do, what is still missing, and what this week adds. A `---` rule follows.
 2. `## Pedagogical Roadmap`: one Mermaid `flowchart TD`, a node per module, each listing its three or
    four subtopics as `•` bullets.
 3. `## Module N: <Title>`, usually five or six, covering the curriculum row's content in teaching
