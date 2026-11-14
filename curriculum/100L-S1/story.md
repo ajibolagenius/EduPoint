@@ -1,8 +1,11 @@
-# 100L S1 Story Bible — Mama Titi Goes Online
+# 100L S1 Running Example — Mama Titi's Kitchen
 
-**For anyone writing 100L S1 materials from Week 05 onward.** Each week's class notes, pre-read and lab
-are written as one episode of this story. Keep names, facts and tone consistent with this page. Change
-this page first if the story needs to change.
+> **From Week 07 (2026-11-14), the episodes are retired.** Weeks 05–06 were written as story episodes.
+> From Week 07, materials use the module structure in [`../AGENTS.md`](../AGENTS.md), and Mama Titi's
+> Kitchen is only the **running example** in code samples and exercises: her menu, prices, pre-orders
+> and canteen page. No cold opens, beats, cliffhangers or dialogue. Keep the facts below (names,
+> dishes, prices, `campuschop.example`) consistent; the arc table is now just a map of which example
+> fits each week's topic. The rest of this page is kept for Weeks 05–06.
 
 Everything here is made up. Any match with a real business or person is accidental.
 
@@ -44,7 +47,8 @@ curriculum document stays the authority for every topic, deliverable and weight.
 | 11 | Git & GitHub | Version control for the studio's work. | Publish the portfolio to GitHub; first PR opened and merged | Tolu is away next week. |
 | 12 | Consolidation & practical | You work alone against a small brief. The story frames the session only and **never** hints at the practical's content. | CA1 — timed build; portfolio live and on GitHub | End of season one. |
 
-Weeks 05–06 are written. Weeks 07–12 are a plan, not written material. Check each row against the curriculum document before
+Weeks 05–06 are written as episodes. Week 07 uses the pre-order form as its running example, without
+the story. Weeks 08–12 are a map of examples, not written material. Check each row against the curriculum document before
 writing the week, and update this table if the tutor team changes it.
 
 ## Writing rules for the story

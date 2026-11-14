@@ -27,15 +27,16 @@ folders hold the materials written for each semester.
   25 guided practice, 65 lab, 10 show & tell and 10 save/submit. Pre-reading is separate.
   Confirmed 2026-10-26; supersedes the original curriculum's longer session model. Earlier weekly
   plans retain their original timings and must be shortened before reuse.
-- One subfolder per week (`week-01/`, `week-02/`, …). Each week holds `pre-read.md`,
-  `class-notes.md`, `class-notes.html` and `lab.md` as they are written. **Always write an interactive
-  HTML presentation when creating or revising class notes.** This begins with 100L S1 Week 04;
-  convert earlier weeks when next revised. Keep Markdown and HTML aligned.
-- Pre-reads, class notes, lab specs, and rubrics live under the semester folder they belong to.
+- One subfolder per week (`week-01/`, `week-02/`, …). **From 100L S1 Week 07**, a week has four
+  materials and nothing else: `pre-read.md`, `class-notes.md`, an interactive `class-notes.html`
+  presentation, and one graded take-home in `assignments/`. No lab, practice kit or tutor notes.
+  Keep Markdown and HTML aligned. Weeks 01–06 keep files from their earlier formats.
+- Pre-reads, class notes, presentations and assignments live under the semester folder they belong to.
+- Assignments are posted and collected on Google Classroom.
 - The checkpoint repository is tagged weekly (`week-05-start`, …) in the class GitHub repo, not here.
 - Physical classes start the week of 2026-10-08; the orientation deck is shared separately.
 
-## Week 04 onward: materials and presentation formats
+## Weeks 04–06: materials and presentation formats
 
 100L S1 Week 04: [Before class](100L-S1/week-04/pre-read.md) ·
 [Class workbook](100L-S1/week-04/class-notes.md) ·
@@ -62,6 +63,24 @@ writing rules are in the [story bible](100L-S1/story.md).
 [Practice kit](100L-S1/week-06/practice-kit/).
 Matching PDFs sit beside each Markdown file.
 
+Week 06 take-home: [Assignment 03 — The Campus Events Board](100L-S1/assignments/assignment-03.md) ·
+[Printable brief](100L-S1/assignments/assignment-03.pdf).
+
+## Week 07 onward: the module structure
+
+From 100L S1 Week 07, every week's notes follow one structure: a short introduction, a **Pedagogical
+Roadmap** diagram, numbered **modules** (each with a mental model, diagrams, code and drills), a
+**Rookie Traps & Debugging Guide**, **Hands-on Classroom Exercises** in three levels, and **Curated
+Deep-Dive References**. The pre-read uses the same structure, shortened to the foundations. Each week's
+assignment carries its curriculum deliverable. The story episodes of Weeks 05–06 are retired; Mama
+Titi's Kitchen stays as the running example in code samples. Full rules are in [AGENTS.md](AGENTS.md).
+
+100L S1 Week 07, *HTML II — Forms, Semantics & Accessibility*: [Pre-read](100L-S1/week-07/pre-read.md) ·
+[Class notes](100L-S1/week-07/class-notes.md) ·
+[Interactive class presentation](100L-S1/week-07/class-notes.html) ·
+[Assignment 04 — The Portfolio Contact Desk](100L-S1/assignments/assignment-04.md) ·
+[Printable brief](100L-S1/assignments/assignment-04.pdf).
+
 ### HTML class presentations
 
 Download `class-notes.html` and open it in a modern browser; GitHub's file view shows the source.
@@ -81,22 +100,22 @@ URL for the laptop and a `/remote` URL for the phone. The phone gets Next/Previo
 list and a touch pad that moves a laser dot on the laptop. The deck itself is unchanged: the remote
 only works while the server runs, and the file still opens offline as before.
 
-Every future HTML version must be clean, interactive and motion-backed, using the Week 04 lab
+Every HTML version must be clean, interactive and motion-backed, using the Week 04 lab
 theme — monochrome with four purposeful accents, system monospace type rather than embedded font
 files, big rounded controls and no full-bleed dark slides. Interactions must teach: predict, try, inspect and explain.
-From Week 05, decks are built for live teaching: each beat runs problem, idea, a room vote with a
-reveal, then try, with story moments and diagrams instead of text walls. Browser
+Weeks 05–06 decks run story beats (problem, idea, room vote, try); from Week 07 each module runs an
+idea slide, then a room vote or live editor. Browser
 simulations are practice, not proof of device work. Keep the two-hour session, student-only content,
 source credits and the Markdown workbook's scope. Include keyboard navigation, a topic index,
 reduced-motion support, the phone-remote hook and offline assets. Check every slide and core
 interaction in a real browser at projector and phone sizes before delivery. Full authoring
 requirements are in [AGENTS.md](AGENTS.md).
 
-From Week 04, use the workbook layout: a session map, short activity pages, clearly labelled
+Weeks 04–06 use the workbook layout: a session map, short activity pages, clearly labelled
 operating-system commands (including both Windows PowerShell and Command Prompt), expected results,
 checkpoints and writing space. Show pasted tool output rather than describing it. Weeks 04 and
 earlier are hands-on first: the student acts, sees the real output, then reads at most three lines.
-**From Week 05, class notes are episodes:** a cold open, three beats that each run problem → idea →
+**Weeks 05–06 class notes are episodes:** a cold open, three beats that each run problem → idea →
 myth → try → what you should see → on the job → check, the lab as "the job", a cliffhanger, and an
 appendix holding the step-by-step procedure. Full rules are in [`AGENTS.md`](AGENTS.md). Class notes and
 their PDFs are student-only: put tutor guidance at the

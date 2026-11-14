@@ -4,8 +4,8 @@ The programme repository for **Full Stack & Mobile Application Development**, de
 [EduPoint](https://www.linkedin.com/company/edupoint-limited/) at **Trinity University, Yaba, Lagos**
 under the **EduPoint Future Skills Academy** partnership.
 
-Shared with students and tutors: it holds the curriculum and the per-semester class notes,
-pre-reads, lab specs and rubrics as they are written.
+Shared with students and tutors: it holds the curriculum and the per-semester pre-reads, class
+notes, presentations and assignments as they are written.
 
 ## How Students Join
 
@@ -99,7 +99,7 @@ is the curriculum and the teaching materials.
 ## Repository Layout
 
 ```
-curriculum/     Per-semester class notes, pre-reads, lab specs & rubrics (100L-S1 … 400L-S2, per track)
+curriculum/     Per-semester pre-reads, class notes, presentations & assignments (100L-S1 … 400L-S2, per track)
 README.md       This document
 ```
 
@@ -121,7 +121,7 @@ weekly materials; those older plans must be shortened before reuse. Themes and a
 are unchanged.
 
 Content is authored per semester under `curriculum/<LEVEL>-S<n>/<TRACK>/`, one subfolder per week
-once materials grow. Class notes, pre-reads, lab specs and rubrics belong to the semester folder
+once materials grow. Pre-reads, class notes, presentations and assignments belong to the semester folder
 they are taught in; the weekly checkpoint tags are made in the class repository, not here.
 
 Always create an interactive `class-notes.html` alongside newly written or revised `class-notes.md`.

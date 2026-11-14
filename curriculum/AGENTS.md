@@ -39,20 +39,23 @@ curriculum/
   200L-S2/ … 300L-S2/       split into Full-Stack/ and Mobile/
   400L-S1/                  shared teaching, track-adapted labs
   400L-S2/                  split into Full-Stack/ and Mobile/
-    story.md                the semester's story bible: characters, arc, writing rules (from 100L S1 W05)
-    week-01/
-      pre-read.md           student-facing: read before the session
-      class-notes.md        student-only workbook: the full written episode, for catch-up and revision
-      class-notes.html      required presentation the tutor teaches from, built from the same episode
-      lab.md                student-facing: the lab and deliverable, with tutor notes at the end
+    story.md                the semester's running example (100L S1: Mama Titi's Kitchen)
+    week-07/
+      pre-read.md           student-facing: the week's foundations, read before the session
+      class-notes.md        student-facing: the full module-by-module notes, for class and revision
+      class-notes.html      required presentation the tutor teaches from, built from the notes
+      assets/               images the notes need, only when a real screenshot teaches something
     assignments/
-      assignment-NN.md      student-facing: take-home work spanning several weeks
-      assignment-NN-tutor-notes.md   for tutors: purpose, checks, feedback prompts; never the answer key
+      assignment-NN.md      student-facing: the week's graded take-home, carrying its deliverable
 ```
 
 - Create one folder per week, named `week-NN` with two digits.
-- Each week has the three Markdown sources above and a required `class-notes.html` presentation.
-  Add other files only if the week really needs them, such as matching PDFs or a printable handout.
+- From 100L S1 Week 07, a week has **four materials and nothing else**: `pre-read.md`,
+  `class-notes.md`, `class-notes.html` and one `assignments/assignment-NN.md`. Don't write a
+  `lab.md`, a practice kit, tutor notes or story episodes for new weeks. Render an assignment to PDF
+  only when it is attached to Google Classroom.
+- Weeks 01–06 keep files from earlier formats (labs, practice kits, PDFs, tutor notes). Leave them
+  as they are, and don't copy their layouts forward.
 - Empty folders contain a `.gitkeep` file. Delete it when the folder gets real content.
 
 ## The source of truth
@@ -78,11 +81,10 @@ privately; **it is not committed to this repository.**
 - Link to external sources rather than copying them. Paraphrase, and quote only short pieces with
   credit.
 - Credit sources at the end of each file under a **Sources** or **References** heading.
-- From Week 04, include relevant raster images (for example, real interface screenshots) and
-  Mermaid diagrams beside the concepts they explain. Give images meaningful alt text, a caption,
-  source and licence; store them under the week's `assets/` folder for offline use. Each visual
-  should support a question or activity. Keep Mermaid source editable in Markdown and render it
-  in the PDF. Follow the workbook layout conventions in `curriculum/README.md`.
+- Put a Mermaid diagram beside every concept with structure or flow; keep its source editable in
+  Markdown. Add a raster image (such as a real interface screenshot) only when it teaches something
+  words and diagrams can't. Give it meaningful alt text, a caption, source and licence, and store it
+  in the week's `assets/` folder for offline use.
 
 ### Reference sites
 
@@ -106,26 +108,28 @@ privately; **it is not committed to this repository.**
 - **Session structure.** Every class is **2 hours (120 minutes)**, as confirmed by the lead tutor
   on 2026-10-26. This supersedes the longer timings in curriculum §2 and earlier weekly plans:
 
-  | Part | Time |
-  |---|---|
-  | Warm-up | 10 min |
-  | Guided concept and student practice | 25 min |
-  | Lab | 65 min |
-  | Show & tell | 10 min |
-  | Ship | 10 min |
+  | Part | Time | From Week 07, taught from |
+  |---|---|---|
+  | Warm-up | 10 min | A recap or prediction from the deck |
+  | Guided modules | 25 min | The modules, live-coded, with a room vote per module |
+  | Hands-on exercises | 65 min | The notes' Levels 1–3 |
+  | Show & tell | 10 min | Learners show Level 3 work |
+  | Ship | 10 min | Save work and start the assignment |
 
   Session plans must total exactly 120 minutes, including transitions, saving and submission.
-  Pre-reading and optional extensions are outside class time. Interleave short demonstrations with
-  student attempts, expected results and checks; the lab takes most of the session. Before Git is
-  taught, Ship means saving files and submitting evidence. Shorten older plans before reusing them.
+  Pre-reading, the assignment and optional extensions are outside class time. Interleave short
+  demonstrations with student attempts, expected results and checks; hands-on work takes most of the
+  session. Before Git is taught, Ship means saving files and submitting evidence. Shorten older plans
+  before reusing them.
 - **Teach only what students know so far.** Don't use a tool, language or concept before the week
   that introduces it. For example, in 100L S1 the terminal arrives in week 4, VS Code in week 5, HTML in
   week 6 and Git in week 11. When a reading mentions a tool students haven't met yet, tell them to skip
   that part.
 - **Plan for poor connectivity.** Students may have no laptop or no data. Give a no-internet fallback
   for anything that depends on the network, and prefer activities that work offline.
-- **Submissions.** Weekly submissions are merged pull requests once Git has been taught. Before that,
-  the lab must say exactly how to submit and how to name the files.
+- **Submissions.** Assignments are posted and collected on **Google Classroom**. Once Git has been
+  taught, weekly submissions are merged pull requests, linked from Classroom. Before that, the
+  assignment must say exactly what to submit and how to name the files.
 - **Grading weights** are fixed by the curriculum document:
 
   | Component | Weight |
@@ -136,98 +140,102 @@ privately; **it is not committed to this repository.**
   | Final practical | 35% |
   | Demo & defence | 25% |
 
-  Never change these in a lab's rubric.
+  Never change these in an assignment's rubric.
 
 ### What each file contains
 
-**`pre-read.md`** (for students, about 30–45 minutes of work)
-- What the session is about, in two or three sentences
-- From 100L S1 Week 05: open with the story set-up, a short message that tells students the client's
-  problem without giving away the class's cold open
-- Short readings, in order, each with one question to keep in mind
-- Anything to do before reading, and what to bring
-- A note on what to do if the student has no internet
+From 100L S1 Week 07 (decided by the lead tutor on 2026-11-14), every week uses the **module
+structure** below, modelled on the tutor team's full-stack class notes. The notes teach the concept
+fully; the deck teaches it live; the assignment is where students prove it.
 
-**`class-notes.md`** (for students: the full written episode, read for catch-up and revision)
+| File | Read by | What it is |
+|---|---|---|
+| `pre-read.md` | students, before class | The week's foundations in the same structure, 30–45 minutes |
+| `class-notes.md` | students | The full module-by-module notes, for class and revision |
+| `class-notes.html` | the room | The presentation the tutor teaches from, built from the notes |
+| `assignments/assignment-NN.md` | students | The graded take-home that carries the week's curriculum deliverable |
 
-From 100L S1 Week 05, each week's class notes are one **episode** of a semester-long story. Read the
-semester's story bible (for example [`100L-S1/story.md`](100L-S1/story.md)) first, and keep its names,
-facts and tone. Change the bible before changing the story. The tutor teaches live from the HTML
-presentation; the Markdown is the complete chapter. A student who missed the session must be able to
-work through it alone. Weeks 01–04 keep their older do-first layout until they are next revised.
+**`class-notes.md`** — this outline, in this order:
 
-- Title the week as an episode, such as "Week 05 — Mama Titi's Broken Total". Then "So far, and
-  today" in one short paragraph, "How to use these notes" with a table of the beat parts, and the
-  learning outcomes.
-- **Write each outcome as something the tutor can see happening on a device** — *find, create, move,
-  diagnose, launch* — not *explain* or *describe*. Where understanding is the point, bolt it to an
-  action: "open two sites, compare the address bars, then explain what differs."
-- The episode, in this order:
-  - **Cold open**, the 10-minute warm-up: the client's message, then a prediction on paper that the
-    room votes on.
-  - **Beats**, inside the 25-minute guided practice. Three is the norm, at about 8 minutes each. Each
-    beat runs **Problem → Idea → Try**:
-    - **The problem**: two to four sentences of story that create the need for the concept.
-    - **The idea**: the concept, with a mental model (an analogy) and a diagram. Theory lives here.
-      Explain an idea before naming it.
-    - **Myth**: one belief beginners commonly hold, stated, then corrected.
-    - **▶ Try it**: numbered steps, marked **(laptop)**, **(phone)**, **(paper)** or **(watch)**. Every
-      beat ends in hands-on work; no beat is reading only.
-    - **✓ What you should see**: paste the **real output or screen** the student gets, so they compare
-      it instead of guessing whether they broke something.
-    - **On the job**: one or two sentences on where working developers use this.
-    - **? Check**: one question, with the answer hidden in a
-      `<details><summary>Answer</summary>…</details>` block.
-  - **The job**: the lab briefing, framed as the client's request, with its own problem, idea, myth
-    and check, and a table of the lab parts. Curriculum topics practised only in the lab are taught here.
-  - **Next episode**: the cliffhanger that leads into next week's theme, as planned in the story bible.
-- Then: the episode in one table (problem → tool → idea), key words, common questions, Read more,
-  Sources and an exit reflection.
-- **Appendix · Step by step** comes last: exact clicks, shell and operating-system variants, shortcut
-  tables and no-extension routes. Beats point to it, such as *(Appendix A)*, instead of carrying
-  procedure in the story.
-- **Length:** about a 30-minute read before the appendix, roughly 4,000–4,500 words including tables
-  and code. The appendix is extra.
-- **Doing outweighs listening in class.** The tutor reads the problem in under a minute and teaches
-  the idea in two or three; learners spend the rest of each beat trying. The Markdown may explain more
-  than the room hears.
-- **Cap passive time.** At most one **(watch)** step per session. Where the room has too few machines,
-  turn it into a **(phone)** task or a shared-keyboard turn. **(paper)** is a parallel route for a
-  student with no device, not a substitute for a keyboard turn when one is available.
-- Key words (a glossary), common questions (also in `<details>` blocks), and Read more. Keep Read more
-  to links a student should really open; put full attribution in a short Sources list.
-- **Never include a "For tutors" section or tutor-only guidance in class notes or their PDF.**
-  Put the session run sheet, preparation checklist, demo tips and private teaching logistics in
-  the lab's final tutor section. Students may still have a short agenda showing their own activities.
+1. `# Week NN: <Curriculum theme>`, then two or three short paragraphs: what students can already
+   do, what is still missing, and what this week adds. A `---` rule follows.
+2. `## Pedagogical Roadmap`: one Mermaid `flowchart TD`, a node per module, each listing its three or
+   four subtopics as `•` bullets.
+3. `## Module N: <Title>`, usually five or six, covering the curriculum row's content in teaching
+   order. Inside each module:
+   - Numbered subsections, `### 1. <Subtopic>`. Name the analogy in the heading where there is one,
+     such as "(The Paper Form Analogy)". Explain the idea before naming it.
+   - The **mental model** in a `> [!NOTE]` callout that starts `**The Mental Model:**`.
+   - Tables to compare things, Mermaid for structure and flow, and short commented code blocks.
+     Mark wrong and right code with 🔴 and 🟢 comments.
+   - GitHub callouts, each with one job: `[!NOTE]` mental models, `[!TIP]` shortcuts and good habits,
+     `[!IMPORTANT]` rules students must not miss, `[!WARNING]` mistakes that break work,
+     `[!CAUTION]` safety, security or data-loss risks.
+   - `### 🏋️ Try It Now (Drill N)` wherever students should act before the next module: numbered
+     steps and the real output or screen to expect.
+4. `## Module N: Rookie Traps & Debugging Guide`: a table of *what you see* · *what happened* ·
+   *how to fix it*, quoting real error messages and real browser behaviour.
+5. `## 🎯 Week NN Hands-on Classroom Exercises`: `### Level 1`, `### Level 2`, `### Level 3`, from
+   guided drill to independent build. Level 3 starts the week's curriculum deliverable; the
+   assignment finishes and submits it.
+6. `## 📚 Curated Deep-Dive References`: five to eight bullets, `* [Site: Page](url) — why to open it.`
+   Then `### Sources`: the curriculum row, anything paraphrased, and the date links were checked.
 
-**`lab.md`** (for students first, tutors at the end)
-- The deliverable, quoted from the curriculum document
-- From 100L S1 Week 05: the client's request from "The job" as the brief. The story frames the lab;
-  it never changes the deliverable or the rubric
-- Parts with times and formats
-- Clear requirements
-- Optional extras
-- Submission instructions
-- A rubric that totals 10 points
-- Tutor notes: the kit to prepare, a run sheet by cold open and beat, how to deliver a beat live,
-  and answer keys
+- **Running example.** Code samples share one running example across the semester (100L S1:
+  Mama Titi's Kitchen; see [`100L-S1/story.md`](100L-S1/story.md)). It is example data, not a story:
+  no cold opens, beats, cliffhangers or dialogue.
+- **Length:** roughly 500–850 lines of Markdown. The notes may explain more than the room hears.
+- **Student-only.** Never add a "For tutors" section, a run sheet or the answer to graded work.
+- Answers to drills may sit in `<details><summary>Answer</summary>…</details>` blocks.
+
+**`pre-read.md`** — the same structure, shorter (30–45 minutes):
+
+1. `# Week NN Pre-read: <Theme>`: the session in two or three sentences, the time needed and what to
+   bring. A `---` rule follows.
+2. `## Pedagogical Roadmap`: the class notes' roadmap, with the modules the pre-read covers marked.
+3. Two or three `## Module N:` sections covering only the foundations. Each has a `[!NOTE]` mental
+   model, one small example and a `### Read with a question` reading: the link, where to stop, and
+   one question to keep in mind.
+4. `## 🏋️ Warm-up Drill`: one short task before class, on paper or a laptop.
+5. `## No Internet?`: an offline summary of each reading.
+6. `## ✅ Ready Check` and `## 📚 References`.
+
+**`assignments/assignment-NN.md`** — one per week from 100L S1 Week 06, numbered in the order set:
+
+1. `# Assignment NN: <Title>`, a line with the level, week, theme, points and suggested time, then
+   two or three paragraphs on what students build and why. A `---` rule follows.
+2. `## Mission Roadmap`: a Mermaid flowchart of the tasks.
+3. `## Before You Start`: the AI policy and individual-work rule in a `> [!IMPORTANT]` callout, then
+   the folder and file names.
+4. `## Task N: <Title> · P points`: requirements as a table or numbered steps, the evidence to keep,
+   and callouts where a trap is likely. The week's curriculum deliverable, quoted, is one task.
+5. `## Rookie Traps to Avoid`, `## Submit` (file names, Google Classroom, a no-internet route),
+   `## Marking · 10 points` (a rubric that totals 10) and `## 📚 References`.
+
+- Never include a worked solution or model answer. Assignment tutor notes are no longer written; the
+  rubric is the marking guide.
+- When asked, draft the Google Classroom post as well: title, instructions under about 1,500
+  characters (Classroom formats only bold, italic, underline and bullets), points, due date, topic and
+  rubric rows. Don't commit it. The tutor sets the due date.
 
 **`class-notes.html`** (required whenever class notes are authored or revised)
 
-- Always write and maintain an HTML presentation alongside `class-notes.md`. This starts with
-  100L S1 Week 04; earlier weeks need conversion when their notes are next revised. Markdown remains
-  the editable workbook source. Keep the HTML's concepts, commands, outcomes and session timings in
-  step with it; HTML is a designed teaching experience, not an unstyled Markdown dump.
-- From 100L S1 Week 05, build it for the tutor teaching live. Each beat is a short run of slides:
-  **Problem** (story-beat slide: the client's message or an artefact, such as the order slip),
-  **Idea** (one diagram or model), **Myth or Predict** (a room prompt: big options the tutor marks for
-  the room's choice, then a reveal), and **Try** (steps, what you should see, the check). Never more
-  than one idea slide before the room has to act. Prefer story moments and diagrams to text walls.
-  Keep a simulation only where it is the reveal for a prediction.
+- Always write and maintain an HTML presentation alongside `class-notes.md`. Markdown is the editable
+  source. Keep the HTML's concepts, code, outcomes and session timings in step with it; the HTML is a
+  designed teaching experience, not an unstyled Markdown dump.
+- From 100L S1 Week 07, the deck follows the notes' modules: a title slide, the 120-minute route,
+  the roadmap, then for each module an **Idea** slide (the mental model with one diagram or short code
+  sample) and an **Act** slide (a room vote the tutor reveals, or a live editor the room predicts
+  from). Never more than one idea slide before the room has to act. Then the rookie traps, the
+  exercise levels with the timer, show & ship (pointing to the assignment), a reference slide and
+  sources. Prefer diagrams and live renders to text walls.
+- Build it from the previous week's deck engine with the scripts in `tools/deck-src/week-NN/`
+  (copy the latest week's folder, then swap the slides, CSS and JS parts).
 - Keep it student-only: no presenter notes, because the repository is public. Do not publish worked
   solutions to graded tasks. Label simulations and sample outputs clearly; browser activity must never
   be presented as evidence of a real device command or installation.
-- Embed the full Markdown workbook as the deck's reading copy, with its diagrams rendered to inline SVG.
+- Embed the full Markdown notes as the deck's reading copy, with diagrams rendered to inline SVG and
+  callouts styled.
 - Use the lab theme from the Week 04 presentation: monochrome paper and ink, the system monospace
   stack throughout, big rounded flat controls, and four accents that each keep one job (violet acts,
   coral draws attention, sun marks output and highlights, lime marks live state). Reuse its `:root`
@@ -250,7 +258,7 @@ work through it alone. Weeks 01–04 keep their older do-first layout until they
 
 ### This repository is public: answer keys
 
-- Answer keys for **ungraded** in-class activities may go in the tutor notes.
+- Answers to **ungraded** drills and exercises may sit in `<details>` blocks in the class notes.
 - **Never** commit worked solutions, model answers or answer keys for **graded** work: weekly
   deliverables, practicals, the final exam or capstone criteria. Keep those in the tutors' private
   channels.
@@ -283,7 +291,7 @@ student:
 
 | Level | Policy | What you do |
 |---|---|---|
-| **100L** | **Unaided.** Students build their own skills first. | Do not write, complete or fix a student's lab, deliverable or practical, either in code or in prose. You may explain a concept, point to the matching reading in this repository or a reference site, ask guiding questions, and explain what an error message *means*. |
+| **100L** | **Unaided.** Students build their own skills first. | Do not write, complete or fix a student's exercise, assignment, deliverable or practical, either in code or in prose. You may explain a concept, point to the matching reading in this repository or a reference site, ask guiding questions, and explain what an error message *means*. |
 | **200L** | **Introduced and critiqued.** | You may suggest code, but the student must be able to explain it. Encourage them to check and question what you produce, and say when you are unsure. |
 | **300L+** | **Expected professional practice.** | Help as you would a junior colleague, and still explain your reasoning. |
 
@@ -299,5 +307,5 @@ or ask.
   - `docs:` for teaching materials and READMEs
   - `chore:` for structure and housekeeping
 - Write commit messages in the imperative, and name the semester and week, for example
-  `docs: add 100L-S1 week 02 pre-read, class notes and lab`.
+  `docs: add 100L-S1 week 07 pre-read, class notes, deck and assignment 04`.
 - Commit only what the change needs. Don't stage files from ignored folders.
